@@ -12,9 +12,9 @@ const AboutPage = () => {
         </h1>
         <div class="pa4 content-center">
           <h3>
-            teashdjkashdjksahjdosahjsahdkjashdsahdsahsadhasdsdadasdadadsasdas
-            safdsnhfkjsabkhasdbandjsahdjoashjdsahhjksahjosahdjashdjshasjhsado
-            hdjashsadjhsadhsahdkhdkjsabkdhbahdbabsdbakhdbakhbdkhasbkhdsbhsdb
+            Coldsvmmer. is (3/3)
+            Sultan, Alvian, and Dhiya,
+            a jakarta based band that founded at 2001
           </h3>
         </div>
       </div>
