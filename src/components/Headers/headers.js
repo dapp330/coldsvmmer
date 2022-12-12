@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
-  const headerClass = "dt w-100 bg-black-0 border-box b pa4 ph5-ns fixed";
+  const headerClass = "dt w-100 bg-black-0 border-box b pa4 ph5-ns fixed z-999";
   const [header, setHeader] = React.useState(headerClass);
 
   const listenScrollEvent = (event) => {
@@ -20,13 +20,12 @@ const NavbarComponent = () => {
   }, []);
   return (
     <body>
-      {/* <nav class="dt w-100 bg-black-0 border-box b pa4 ph5-ns fixed"> */}
       <nav class={header}>
         <Link to="/" class="dtc v-mid white link dim mr3" title="home">
           HOME
         </Link>
         <Link
-          to="test"
+          to="gallery"
           class="dtc v-mid white link dim mr3"
           href="#"
           title="galery"

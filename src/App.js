@@ -7,6 +7,8 @@ import { NavbarComponent } from "./components/Headers/headers";
 import { ContentComponent } from "./components/Content_Component";
 import { Test } from "./components/test";
 import { AboutPage } from "./components/about_page";
+import { FooterComponent } from "./components/footer/footer";
+import { GalleryComponent } from "./components/gallery_page";
 
 const App = () => {
   return (
@@ -18,11 +20,13 @@ const App = () => {
         <div>
           <Routes>
             <Route path="/" element={<ContentComponent />} />
-            <Route path="test" element={<Test />} />
+            <Route path="gallery" element={<GalleryComponent />} />
             <Route path="about" element={<AboutPage />} />
           </Routes>
         </div>
-        <div></div>
+        <div>
+          <FooterComponent />
+        </div>
       </div>
     </Router>
   );
