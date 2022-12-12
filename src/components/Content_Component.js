@@ -89,8 +89,8 @@ const players = () => {
 
   return videos.map((video) => {
     return (
-      <div class="fl w-100 justify-center w-40-l pr2-l mt4 mb2 ml2 white">
-        <iframe src={video.link} class="db w-100 h5" />
+      <div class="ml3 mr3 w-40 h-100 mb3 mt3">
+        <iframe src={video.link} class="db w-100 video-card" />
         <span class="b center f3 white-70 fw3">{video.judul}</span>
       </div>
     );
