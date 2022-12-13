@@ -44,7 +44,7 @@ const gallery = () => {
         <div>
           <a href={ag.instagram}>
             <div class="box center flex">
-              <div class="card w-100 h-30 ma5 mt7">
+              <div class="card ma5 mt7">
                 <div class="imgBx">
                   <img src={ag.foto} alt="images" />
                 </div>

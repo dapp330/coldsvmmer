@@ -1,5 +1,6 @@
 .box {
-  width: 50%;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
@@ -8,10 +9,25 @@
 
 .card {
   position: relative;
-  height: 310px;
+  height: 50vh;
+  width: 50vh;
   background: #29282a;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    height: 20vh;
+    width: 20vh;
+  }
 }
 
 .card:before,
