@@ -21,12 +21,16 @@ const NavbarComponent = () => {
   return (
     <body>
       <nav class={header}>
-        <Link to="/" class="dtc v-mid white link dim mr3" title="home">
+        <Link
+          to="/"
+          class="dtc v-mid white link dim mr3 underline-hover"
+          title="home"
+        >
           HOME
         </Link>
         <Link
           to="gallery"
-          class="dtc v-mid white link dim mr3"
+          class="dtc v-mid white link dim mr3 underline-hover"
           href="#"
           title="galery"
         >
@@ -34,7 +38,7 @@ const NavbarComponent = () => {
         </Link>
         <Link
           to="about"
-          class="dtc v-mid white link dim "
+          class="dtc v-mid white link dim underline-hover "
           href="#"
           title="about"
         >
