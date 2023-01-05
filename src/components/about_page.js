@@ -22,42 +22,29 @@ const SongAlbum = () => {
     },
   ];
 
-  return Album.map((album) => {
+  return Album.map((album, index) => {
     return (
-      <div>
-        <a href="#" class="no-underline white">
-          <div class="flex flex-column">
-            <img src={album.poster} class="br4 h3 w3 dib mr4"></img>
-            <span class="b center">{album.title}</span>
-          </div>
-        </a>
-      </div>
+      <a href="#" className="card_album" key={index}>
+        <img src={album.poster} />
+        <p>{album.title}</p>
+      </a>
     );
   });
 };
 
 const AboutPage = () => {
   return (
-    <div class="flex flex-column justify-center pa7">
-      <div class="flex flex-column b--white bl bt br bb bw1 mw7 white mw6">
-        <h1
-          class="justify-center flex"
-          style={{ fontFamily: "dancing script" }}
-        >
-          ColdSvmmer
-        </h1>
-        <div class="pa4 content-center">
-          <h3>
-            Coldsvmmer. is (3/3) Sultan, Alvian, and Dhiya, a jakarta based band
-            that founded at 2001
-          </h3>
-        </div>
+    <div className="about_row">
+      <div className="about_card">
+        <h1 style={{ fontFamily: "dancing script" }}>ColdSvmmer</h1>
+        <h3>
+          Coldsvmmer. is (3/3) Sultan, Alvian, and Dhiya, a jakarta based band
+          that founded at 2001
+        </h3>
       </div>
-      <div class="flex mt6 flex-column">
-        <div class="justify-center flex">
-          <h1 class="white">Album/Song</h1>
-        </div>
-        <div class="flex justify-center mt4 white">{SongAlbum()}</div>
+      <div className="about_album">
+        <h1>Album/Song</h1>
+        <div className="about_list_album">{SongAlbum()}</div>
       </div>
     </div>
   );

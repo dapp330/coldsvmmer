@@ -13,11 +13,11 @@ const ContentComponent = lazy(() => import("./components/Content_Component"));
 const App = () => {
   return (
     <Router>
-      <div class="flex flex-column">
+      <div className="flex flex-column">
         <Suspense
           fallback={
             <span
-              class="center white mt7 center bl bt br bb"
+              className="center white mt7 center bl bt br bb"
               style={{ fontFamily: "dancing script", fontSize: "25vh" }}
             >
               ColdSvmmer
