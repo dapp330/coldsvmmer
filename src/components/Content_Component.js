@@ -1,6 +1,6 @@
 import { Card } from "antd";
 import Meta from "antd/es/card/Meta";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const logo1 = require("../assets/pic/5.png");
 const foto1 = require("../assets/pic/sutit.png");
@@ -30,12 +30,21 @@ const cards = () => {
     },
   ];
 
-  return anggota.map((ag) => {
+  return anggota.map((ag, index) => {
     return (
-      <div class="flex center w-30">
-        <Card cover={<img src={ag.foto} />}>
-          <Meta style={{}} title={ag.nama} description={ag.posisi} />
-        </Card>
+      // <div className="flex center w-30">
+      //   <Card cover={<img src={ag.foto} />}>
+      //     <Meta style={{}} title={ag.nama} description={ag.posisi} />
+      //   </Card>
+      // </div>
+      <div className="card_anggota" key={index}>
+        <figcaption>
+          <div>
+            <img src={ag.foto} alt={ag.foto} />
+          </div>
+          <h2>{ag.nama}</h2>
+          <p>{ag.posisi}</p>
+        </figcaption>
       </div>
     );
   });
@@ -66,42 +75,46 @@ const players = () => {
     },
   ];
 
-  return videos.map((video) => {
+  return videos.map((video, index) => {
     return (
-      <div class="ml3 mr3 w-40 h-100 mb3 mt3">
-        <iframe src={video.link} class="db w-100 video-card" />
-        <span class="b center f3 white-70 fw3">{video.judul}</span>
+      <div key={index}>
+        <iframe src={video.link} className="db w-100 video-card" />
+        <span className="b center f3 white-70 fw3">{video.judul}</span>
       </div>
     );
   });
 };
 
 const ContentComponent = () => {
+  const isMobile = window.innerWidth <= 1200;
+
   return (
-    <body>
-      <article class="helvetica pb5">
-        <header class="vh-100 dt w-100">
-          <div
-            style={{
-              background: `url(${logo1})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            class="dtc v-mid cover ph3 ph4-m ph5-l"
+    <article className="helvetica pb5">
+      <header className="vh-100 dt w-100">
+        <div
+          style={{
+            background: `url(${logo1})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="dtc v-mid cover ph3 ph4-m ph5-l"
+        >
+          <h1
+            className="f1 f-headline-l fw3 b white-90 tc "
+            style={{ fontFamily: "Brush Script MT" }}
           >
-            <h1
-              class="f1 f-headline-l fw3 b white-90 tc "
-              style={{ fontFamily: "Brush Script MT" }}
-            >
-              COLDSVMMER
-            </h1>
-          </div>
-        </header>
-        <div class=" vh-100 w-100 flex flex-row mt3">{cards()}</div>
-        <div class="cf justify-center flex flex-wrap mt5">{players()}</div>
-      </article>
-    </body>
+            COLDSVMMER
+          </h1>
+        </div>
+      </header>
+      <div className=" row_anggota">{cards()}</div>
+      {isMobile ? (
+        <div className="row_anggota">{players()}</div>
+      ) : (
+        <div className="row_playlist">{players()}</div>
+      )}
+    </article>
   );
 };
 
