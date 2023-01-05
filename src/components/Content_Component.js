@@ -33,7 +33,7 @@ const cards = () => {
   return anggota.map((ag) => {
     return (
       <div class="flex center w-30">
-        <Card cover={<img src={ag.foto} style={{ height: "25rem" }} />}>
+        <Card cover={<img src={ag.foto} />}>
           <Meta style={{}} title={ag.nama} description={ag.posisi} />
         </Card>
       </div>
