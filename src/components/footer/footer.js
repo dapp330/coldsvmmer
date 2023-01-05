@@ -5,7 +5,7 @@ const FooterComponent = () => {
     <div>
       <footer class="pv4 ph3 ph5-m ph6-l mid-gray white">
         <small class="f6 db tc">
-          © 2022 <b class="ttu">DUO TAMPAN</b>., All Rights Reserved
+          © 2023 <b class="ttu">TRIO TAMPAN</b>., All Rights Reserved
         </small>
         <div class="tc mt3">
           <a
