@@ -125,7 +125,8 @@
 
 .card_anggota {
   width: 100%;
-  background-color: #ffffff;
+  background-color:  #777777 ;
+  border-radius: 10px;
 }
 
 .card_anggota div {
@@ -138,6 +139,11 @@
 .card_anggota div img {
   height: 100%;
   width: 100%;
+}
+
+.card_anggota h2, p {
+  text-align: center;
+  color: #fff;
 }
 
 .nav {
@@ -180,6 +186,7 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  margin-top: 100px;
 }
 
 .about_card {
@@ -206,7 +213,8 @@
 }
 
 .card_album img {
-  width: 300px;
+  width: 200px;
+  border-radius: 3px;
 }
 
 .card_album p {
@@ -235,7 +243,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  gap: 1rem;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 50px;
 }
