@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
+  const headerClass = "nav";
+  const [header, setHeader] = React.useState(headerClass);
+
+  const listenScrollEvent = (event) => {
+    if (window.scrollY < 73) {
+      return setHeader(headerClass);
+    } else if (window.scrollY > 70) {
+      return setHeader(`${headerClass} bg-black-60`);
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, []);
+
   return (
-    <nav className="nav">
+    <nav className={header}>
       <div className="nav_left">
         <Link to="/" className="nav_items">
           HOME

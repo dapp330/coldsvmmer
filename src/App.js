@@ -8,7 +8,11 @@ import { AboutPage } from "./components/about_page";
 import { FooterComponent } from "./components/footer/footer";
 import { GalleryComponent } from "./components/gallery_page";
 
-const ContentComponent = lazy(() => import("./components/Content_Component"));
+const ContentComponent = lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./components/Content_Component")), 3000);
+  });
+});
 
 const App = () => {
   return (
@@ -16,11 +20,8 @@ const App = () => {
       <div className="flex flex-column">
         <Suspense
           fallback={
-            <span
-              className="center white mt7 center bl bt br bb"
-              style={{ fontFamily: "dancing script", fontSize: "25vh" }}
-            >
-              ColdSvmmer
+            <span className="suspense_card">
+              <h1>ColdSvmmer</h1>
             </span>
           }
         >
