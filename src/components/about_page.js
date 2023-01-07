@@ -26,7 +26,6 @@ const SongAlbum = () => {
     return (
       <a href="#" className="card_album" key={index}>
         <img src={album.poster} />
-        <p>{album.title}</p>
       </a>
     );
   });

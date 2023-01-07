@@ -106,11 +106,13 @@
 
 .video-card {
   height: 50vh;
+  border: 5px solid #000;
+  border-radius: 20px;
 }
 
 .row_anggota {
   width: 100%;
-  padding: 10%;
+  padding: 10% 5%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -125,24 +127,40 @@
 
 .card_anggota {
   width: 100%;
-  background-color:  #777777 ;
+  max-width: 400px;
+  height: 500px;
+  background-color: #777777;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-.card_anggota div {
+.img {
   background-color: #29282a;
   height: 400px;
   width: 100%;
   overflow: hidden;
 }
 
-.card_anggota div img {
+.img img {
   height: 100%;
   width: 100%;
 }
 
-.card_anggota h2, p {
+.card_anggota h2,
+p {
   text-align: center;
+  color: #fff;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  height: 20px;
+}
+
+.ig {
   color: #fff;
 }
 
@@ -220,7 +238,6 @@
 .card_album p {
   color: #222;
   font-size: 2rem;
-  margin-top: -50px;
   background-color: #fff;
   width: 70%;
   text-align: center;
@@ -258,5 +275,4 @@
 
 .suspense_card h1 {
   font-family: dancing script;
-  font-size: 6rem;
 }
