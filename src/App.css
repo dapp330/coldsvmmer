@@ -247,3 +247,16 @@
   width: 100%;
   margin-top: 50px;
 }
+
+.suspense_card {
+  padding: 1rem;
+  border: 2px solid #fff;
+  text-align: center;
+  color: #fff;
+  margin-top: 150px;
+}
+
+.suspense_card h1 {
+  font-family: dancing script;
+  font-size: 6rem;
+}

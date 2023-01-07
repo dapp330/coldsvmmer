@@ -20,11 +20,8 @@ const App = () => {
       <div className="flex flex-column">
         <Suspense
           fallback={
-            <span
-              className="center white mt7 center bl bt br bb"
-              style={{ fontFamily: "dancing script", fontSize: "25vh" }}
-            >
-              ColdSvmmer
+            <span className="suspense_card">
+              <h1>ColdSvmmer</h1>
             </span>
           }
         >
