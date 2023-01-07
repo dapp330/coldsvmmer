@@ -8,7 +8,11 @@ import { AboutPage } from "./components/about_page";
 import { FooterComponent } from "./components/footer/footer";
 import { GalleryComponent } from "./components/gallery_page";
 
-const ContentComponent = lazy(() => import("./components/Content_Component"));
+const ContentComponent = lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./components/Content_Component")), 3000);
+  });
+});
 
 const App = () => {
   return (
