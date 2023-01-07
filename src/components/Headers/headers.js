@@ -37,6 +37,7 @@ const NavbarComponent = () => {
           className="link dim white f6 f5-ns dib mr3 mr4-ns"
           href="https://instagram.com/coldssvmmer?igshid=ZmRlMzRkMDU="
           title="Instagram"
+          target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +54,7 @@ const NavbarComponent = () => {
           className="link dim white f6 f5-ns dib mr3 mr4-ns"
           href="https://open.spotify.com/artist/138waJFOBaoYmIcpe8ckSI?si=qHBbLfMrQzOpWDOIOyNCBQ&utm_source=whatsapp"
           title="Spotify"
+          target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +71,7 @@ const NavbarComponent = () => {
           className="link dim white f6 f5-ns dib mr3 mr4-ns"
           href="#"
           title="Apple Play"
+          target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,6 +89,7 @@ const NavbarComponent = () => {
           className="link dim white f6 f5-ns dib"
           href="https://www.youtube.com/@Coldsvmmer"
           title="YouTube"
+          target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ const App = () => {
         <Suspense
           fallback={
             <span className="suspense_card">
-              <h1>ColdSvmmer</h1>
+              <h1 className="f1 f-headline-l fw3 b white-90 tc">ColdSvmmer</h1>
             </span>
           }
         >
