@@ -6,7 +6,7 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import { NavbarComponent } from "./components/Headers/headers";
 import { AboutPage } from "./components/about_page";
 import { FooterComponent } from "./components/footer/footer";
-import { GalleryComponent } from "./components/gallery_page";
+import { VideoComponent } from "./components/video_page";
 
 const ContentComponent = lazy(() => {
   return new Promise((resolve) => {
@@ -31,8 +31,8 @@ const App = () => {
           <div>
             <Routes>
               <Route path="/" element={<ContentComponent />} />
-              <Route path="gallery" element={<GalleryComponent />} />
-              <Route path="about" element={<AboutPage />} />
+              <Route path="music" element={<AboutPage />} />
+              <Route path="video" element={<VideoComponent />} />
             </Routes>
           </div>
           <div>

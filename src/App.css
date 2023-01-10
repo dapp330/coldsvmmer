@@ -144,6 +144,7 @@
 .img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .card_anggota h2,
@@ -209,7 +210,6 @@ p {
 
 .about_card {
   padding: 2rem;
-  border: 5px solid #fff;
   text-align: center;
   color: #fff;
 }
@@ -243,14 +243,14 @@ p {
   text-align: center;
 }
 
-.about_album {
+.music_album {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.about_album h1 {
+.music_album h1 {
   font-size: 2rem;
   color: #fff;
 }
@@ -263,6 +263,21 @@ p {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 50px;
+}
+.row_music {
+  width: 100%;
+  padding: 10% 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card_music {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .suspense_card {
