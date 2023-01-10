@@ -25,11 +25,11 @@ const NavbarComponent = () => {
         <Link to="/" className="nav_items">
           HOME
         </Link>
-        <Link to="gallery" className="nav_items">
-          GALERY
+        <Link to="music" className="nav_items">
+          MUSIC
         </Link>
-        <Link to="about" className="nav_items">
-          ABOUT
+        <Link to="video" className="nav_items">
+          VIDEO
         </Link>
       </div>
       <div className="nav_right">
